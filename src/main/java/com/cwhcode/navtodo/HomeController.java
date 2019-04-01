@@ -22,19 +22,19 @@ public class HomeController {
         return "index";
     }
 
-    /*
+
     @RequestMapping("/list")
     public String listItems(Model model) {
         model.addAttribute("items", toDoRepository.findAll());
         return "list";
-    } */
+    }
 
     @GetMapping("/add")
     public String addItem(Model model) {
         model.addAttribute("item", new Item());
         return "additem";
     }
-    /*
+
 
     @PostMapping("/process")
     public String processItem(@Valid Item item, BindingResult result)
@@ -66,5 +66,5 @@ public class HomeController {
         toDoRepository.deleteById(id);
         return "redirect:/list";
     }
-    */
+
 }
