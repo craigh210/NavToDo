@@ -15,7 +15,7 @@ public class Item {
     private long id;
 
     @NotNull
-    @Size(min=3)
+    @Size(min=3, max=40)
     private String title;
 
     @Size(max=150)
