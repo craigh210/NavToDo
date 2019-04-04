@@ -14,6 +14,7 @@
 </head>
 <body>
 <div class="container">
+    <div class="jumbotron">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">Much To Do</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -43,12 +44,15 @@
             <td th:text="${item.content}"></td>
             <td>
                 <!--<a th:href="@{/edit/{id}(id=${item.id})}">Edit</a> -->
-                <a th:href="@{/detail/{id}(id=${item.id})}">Select</a>
+                <!--<a th:href="@{/detail/{id}(id=${item.id})}">Select</a>-->
+                <a class="btn btn-primary btn-primary btn-sm"
+                   th:href="@{/detail/{id}(id=${item.id})}" role="button">
+                    Select</a>
                 <!--<a th:href="@{/delete/{id}(id=${item.id})}">Delete</a>-->
             </td>
         </tr>
     </table>
-
+    </div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

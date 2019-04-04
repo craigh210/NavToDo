@@ -13,8 +13,8 @@
 </head>
 <body>
 <div class="container">
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="jumbotron">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,10 +40,11 @@
             </li>
         </ul>
     </div>
-</nav>
-<h4>Your To Do</h4>
-Title :<span th:text="${item.title}" ></span><br />
-Description :<p th:text="${item.content}" ></p>
+    </nav>
+    <h4>Your To Do</h4>
+    Title :<span th:text="${item.title}" ></span><br />
+    Description :<p th:text="${item.content}" ></p>
+    </div>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
