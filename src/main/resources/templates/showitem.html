@@ -42,8 +42,21 @@
     </div>
     </nav>
     <h4>Your To Do</h4>
-    Title :<span th:text="${item.title}" ></span><br />
-    Description :<p th:text="${item.content}" ></p>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    Title:
+                </div>
+                    <span th:text="${item.title}"></span>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    Description:
+                </div>
+                    <span th:text="${item.content}"></span>
+            </div>
+        </div>
+
     </div>
 
 <!-- Optional JavaScript -->
