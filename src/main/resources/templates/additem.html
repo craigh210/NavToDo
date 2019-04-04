@@ -39,10 +39,14 @@
       th:object="${item}"
       method="post">
     <input type="hidden" th:field="*{id}" />
-    Title :<input type="text" th:field="*{title}" />
+    <label for="inputTitle">Title</label>
+    <input class="form-control" type="text" id="inputTitle" placeholder="Title" th:field="*{title}" />
+    <!--Title :<input type="text" th:field="*{title}" />-->
     <span th:if="${#fields.hasErrors('title')}"
           th:errors="*{title}"></span><br />
-    Description :<textarea rows="5" th:field="*{content}" />
+    <label for="inputContent">Description</label>
+    <input class="form-control" type="text" id=inputContent placeholder="Description" th:field="*{content}" />
+        <!--Description :<textarea rows="5" th:field="*{content}" />-->
     <span th:if="${#fields.hasErrors('content')}"
           th:errors="*{content}"></span><br />
     <br />
